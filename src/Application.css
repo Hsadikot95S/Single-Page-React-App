@@ -1,0 +1,232 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* Path: src\index.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Path: src\components\Header.css */
+.header {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #282c34;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header__logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.header__search {
+  display: flex;
+  align-items: center;
+  flex: 0.4;
+  border-radius: 24px;
+  background-color: white;
+  padding: 5px;
+}
+
+.header__searchInput {
+  flex: 1;
+  border: none;
+  outline-width: 0;
+}
+
+.header__searchIcon {
+  padding: 5px;
+  background-color: #febd69;
+  color: white;
+  border-radius: 0 24px 24px 0;
+}
+
+.header__nav {
+  display: flex;
+  flex: 0.3;
+  justify-content: space-around;
+}
+
+.header__option {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 24px;
+}
+
+.header__optionBasket {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+/* .Application-logo {
+} */
+
+.App-link {
+  color: #09d3ac;
+}
+
+.main_container{
+    display: grid;
+    grid-template-rows: 0.4fr 1.5fr 0.1fr;
+    overflow: hidden;
+    grid-gap: 2px;
+}
+
+.active{
+    color:red;
+}
+
+.maincontent {
+    display: grid;
+    grid-template-columns: 2.5fr 1.5fr;
+    border-color: #0e758a;
+    grid-template-rows: minmax(665px,auto);
+    grid-gap: 2px;
+    overflow: hidden;
+}
+
+/* Main & Food CSS */
+.divMain{
+    margin: 5px;
+    padding-left: 20px;
+    padding-right: 40px;
+}
+
+.desc{
+    font-size: 16px;
+    text-align: justify;
+    line-height: 26px;
+}
+
+.newsFeed{
+    font-size: 15px;
+    text-align: left;
+    line-height: 22px;
+}
+
+.newsFeed > li {
+    margin-bottom: 5px;
+}
+
+/* Header CSS */
+.header-font{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    padding-left: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.header-style{
+    background-image: url("./Header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;    
+    color: #733668;
+    width: 100%;
+    height: 50%;
+}
+
+/* Footer CSS */
+footer{
+    background-color: #3d3d3d;
+    color: #f1f1f1;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+/* NavBar */
+.navStyle{
+    font-size: 18px;
+    padding-top: 20px;
+    padding-right: 40px;
+}
+
+img {
+    height: 80%;
+    width: 100%;
+}
+
+@media screen and (max-width: 720px){
+    .maincontent {
+        display: block;
+    }
+    .main_container {
+        display: block;
+    }
+
+    .divMain{
+        margin: 0;
+        padding: 0;
+
+    }
+    .header-font{
+        font-family: Papyrus, serif;
+        font-size: 33px;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .desc{
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .newsFeed{
+        font-size: 14px;
+    }
+
+    img{
+        height: 75%;
+    }
+
+    .navStyle{
+        font-size: 18px;
+        padding: 0;
+        text-align: justify;
+    }
+
+    .header-style{
+        min-height: 100%;
+    }
+
+}

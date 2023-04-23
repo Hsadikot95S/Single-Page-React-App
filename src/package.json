@@ -1,0 +1,13 @@
+{
+  "author": "Hsadikot",
+  "description": "A single Page Blog Application",
+  "license": "ISC",
+  "main": "index.js",
+  "name": "blog",
+  "scripts": {
+    "start": "react-scripts start --openssl-legacy-provider",
+    "dev": "NODE_OPTIONS=--openssl-legacy-provider && next dev",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider && next build && next export"
+  },
+  "version": "1.0.0"
+}
